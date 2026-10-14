@@ -1,3 +1,14 @@
+"""
+Prueba Técnica: Automatización de Triage de Solicitudes Financieras
+Autor: Giancarlo
+Fecha: 2026-10-14
+
+Este script procesa un lote de solicitudes de clientes en formato JSONL,
+clasifica cada solicitud usando un modelo de lenguaje (con fallback a modo
+simulado), extrae códigos de referencia, enmascara datos sensibles (PII)
+y genera un archivo de salida con el resultado del triage.
+"""
+
 import json
 import os
 import re
