@@ -20,3 +20,7 @@ salida.jsonl
 .idea/
 *.swp
 *.swo
+
+# Archivos temporales
+*.tmp
+*.temp
