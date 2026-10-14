@@ -1,0 +1,22 @@
+# Entorno y secretos
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Archivos de salida
+salida.jsonl
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

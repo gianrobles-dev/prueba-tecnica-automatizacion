@@ -1,0 +1,3 @@
+python-dotenv>=1.0.0
+# Agrega aquí lo que necesites.
+openai>=1.0.0
