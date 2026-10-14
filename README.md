@@ -92,3 +92,14 @@ Automatización del proceso de clasificación y triage de solicitudes de cliente
 2. Instala las dependencias:
    ```bash
    pip install -r requirements.txt
+
+
+## Estructura del proyecto
+├── data/
+│ ── solicitudes_oct.jsonl # Datos de entrada (40 solicitudes)
+├── main.py # Script principal de procesamiento
+├── requirements.txt # Dependencias de Python
+├── .env.example # Plantilla de variables de entorno
+├── .gitignore # Archivos excluidos del repositorio
+├── DECISIONES.md # Justificaciones técnicas y de arquitectura
+└── README.md # Este archivo
