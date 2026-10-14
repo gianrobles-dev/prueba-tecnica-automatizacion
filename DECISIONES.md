@@ -26,3 +26,8 @@ El cuello de botella sería la API del LLM: límites de tasa (Rate Limits), late
 
 ### 6. ¿Qué dejaste fuera por tiempo y qué harías con dos días más?
 Dejé fuera: pruebas unitarias exhaustivas con `pytest` (mockeando las respuestas del LLM), un pipeline de CI/CD en GitHub Actions que bloquee commits con secretos, y el uso de *Structured Outputs* (JSON Mode estricto) de OpenAI para garantizar el esquema de salida sin necesidad de parseo defensivo. Con dos días más, también implementaría un dashboard de monitoreo para medir la "deriva" del modelo y la tasa de falsos positivos en la revisión humana.
+
+### 7. Notas adicionales
+- El script fue diseñado para ser ejecutado con un solo comando: `python main.py`.
+- En modo simulado, el clasificador heurístico (MockLLM) utiliza reglas basadas en palabras clave para emular el comportamiento de un LLM real.
+- Todos los archivos de salida (`salida.jsonl`) están excluidos del repositorio vía `.gitignore` para mantener el repo limpio.
